@@ -1,0 +1,2287 @@
+/*
+ * Author       : francois145
+ * Generated on : 04-Sep-2018 00:37:17
+ * Version      : 1.0
+ */
+ application "Apartments Rental App"
+ {
+ 	date format = "yy-MM-dd"
+ 	time zone = "Asia/Karachi"
+	section Home
+	{
+		icon = "users-2-home"
+				 page Home 
+	 	 { 
+ 	 	 displayname = "Home" 
+
+ 	 	 icon = "" 
+	 	 Content="<zml \t\t\n\t\t\n\t\t\n\t\t\twebDeviceConfig='{\"layout\":{\"style\":\"padding-right:0px;padding-top:0px;padding-bottom:0px;padding-left:0px;\",\"design\":\"fluid\",\"displayType\":\"plain\"}}'\n\t\t\n\t\t\n\t\t>\n\t<layout>\n\t<row>\n\t<column\n   \t\t width=\"50%\"\n   \t>\n\t<panel \n>\n\t<pr    \t\t height = 'fill'\n   \t\t width = 'fill'\n\n>\n\t<pc    \t\t width = '100%'\n   \t\t bgColor = '#EE7343'\n   \t\t padding = '20px'\n   \t\t hAlign = 'center'\n   \t\t vAlign = 'middle'\n   \t\t action = 'Report'\n   \t\t componentLinkName = 'All_Client_Account_Information'\n   \t\t target = 'popup'\n   \t\t popupWidth = '1000px'\n   \t\t popupHeight = '1000px'\n\n>\n\t<pr    \t\t height = 'auto'\n   \t\t width = 'auto'\n\n>\n\t<pc \n>\n\t<pr \n>\n\t<pc \n>\n\t\n<\/pc><pc \n>\n\t<image    \t\t color = '#FFFFFF'\n   \t\t bgColor = '#EE7343'\n   \t\t width = '40px'\n   \t\t height = '40px'\n   \t\t imageType = 'icon'\n   \t\t value = 'zc-li-solid users-2-a-star'\n   \t\t iconsize = '2'\n   \t\t cornerRadius = '20px'\n   \t\t action = 'Report'\n   \t\t componentLinkName = 'All_Client_Account_Information'\n   \t\t target = 'popup'\n   \t\t popupWidth = '1000px'\n   \t\t popupHeight = '1000px'\n   \t\t unicodeValue = 'ef6e'\n\n\/>\n<\/pc>\n<\/pr><pr \n>\n\t<pc \n>\n\t\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/panel>\n<\/column><column\n   \t\t width=\"50%\"\n   \t>\n\t<panel \n>\n\t<pr    \t\t height = 'fill'\n   \t\t width = 'fill'\n\n>\n\t<pc    \t\t width = '100%'\n   \t\t bgColor = '#EE7343'\n   \t\t padding = '20px'\n   \t\t hAlign = 'center'\n   \t\t vAlign = 'middle'\n   \t\t action = 'Report'\n   \t\t target = 'popup'\n   \t\t popupWidth = '1000px'\n   \t\t popupHeight = '1000px'\n\n>\n\t<pr    \t\t height = 'auto'\n   \t\t width = 'auto'\n\n>\n\t<pc \n>\n\t<pr \n>\n\t<pc \n>\n\t\n<\/pc><pc \n>\n\t<image    \t\t color = '#FFFFFF'\n   \t\t bgColor = '#EE7343'\n   \t\t width = '40px'\n   \t\t height = '40px'\n   \t\t imageType = 'icon'\n   \t\t value = 'zc-li-solid users-2-a-star'\n   \t\t iconsize = '2'\n   \t\t cornerRadius = '20px'\n   \t\t action = 'Report'\n   \t\t target = 'popup'\n   \t\t popupWidth = '1000px'\n   \t\t popupHeight = '1000px'\n   \t\t unicodeValue = 'ef6e'\n\n\/>\n<\/pc>\n<\/pr><pr \n>\n\t<pc \n>\n\t\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/pc>\n<\/pr>\n<\/panel>\n<\/column>\n<\/row>\n<\/layout>\n<\/zml>" 
+ 	 	}
+	}
+	section Appartements
+	{
+		icon = "travel-paris-tower"
+		form Appartements
+		{
+			displayname = "Add Appartements Detail"
+			success message = "Data Added Successfully!"
+			field alignment = left
+			feature property = 32
+			plain1
+			(
+    			type = plaintext
+				value = "<br> \n<table style=\"width: 100%; font-size: 10pt\" border=\"2\" cellspacing=\"2\" cellpadding=\"2\"> \n <tbody> \n  <tr> \n   <td style=\"text-align: center\"><font size=\"4\" style=\"\" face=\"times new roman, times, serif\" color=\"#cc0000\"><a style=\"\" rel=\"noopener noreferrer\" target=\"_blank\" title=\"Back To Appartements Reservation\" href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Appartements_Reservation\"><b style=\"\">Back To Appartements Reservation</b></a></font></td> \n  </tr> \n </tbody> \n</table>"
+				width = 300px
+			)
+			Product_Name
+			(
+    			type = text
+				displayname = "Appartment Name"
+				width = 300px
+			)
+			Numero_appartement
+			(
+    			type = text
+				displayname = "Numero appartement"
+				width = 300px
+			)
+			Product_Cat_gory
+			(
+				type = picklist
+				displayname = "Appartment Catégory"
+				values = {"Appartments", "Bicyclette", "Bureau", "Chaises hautes", "Garage", "Lit d'appoint", "Lockers", "Modems", "Parc de bébé"}
+				initial value = "Appartments"
+				width = 300px
+			)
+			Sous_cat_gotie
+			(
+				type = picklist
+				displayname = "Sous-catégotie"
+				values = {"Autre", "Double", "Meublé", "Non meublé", "Semi-meublé", "Simple", "Simple etroit", "Simple moto"}
+				initial value = "Autre"
+				width = 300px
+			)
+			Num_ro_intercom
+			(
+    			type = text
+				displayname = "Numéro intercom"
+				width = 300px
+			)
+			Extension
+			(
+				type = number
+				width = 300px
+			)
+			Immeubles
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				sortorder = ascending
+				width = 300px
+			)
+			Choses_incluses
+			(
+				type = list
+				displayname = "Choses incluses"
+				values = {"Bain", "Balcon", "Chauffage", "Douche", "Eau chaude", "Electricite", "Fumeur", "Laveuse-sécheuse", "Parking", "Porte-patio", "Rénové", "Sous-sol"}
+				height = 60px
+				width = 300px
+			)
+			status
+			(
+				type = picklist
+				displayname = "status "
+				values = {"available", "departure confirmed", "renovation", "cleaning in progress", "dirty", "standard lease"}
+				initial value = "available"
+				width = 300px
+			)
+			Date_field
+			(
+    			type = date
+				displayname = "Date"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 300px
+			)
+			Type
+			(
+				type = picklist
+				displayname = "Type d'appart"
+				values = {"1½", "1½ VIP", "2½", "2½ VIP", "3½ 1 LIT", "3½ 2 LITS", "3½ VIP", "4½", "5½", "6½", "7½", "8½"}
+				initial value = "1½"
+				width = 300px
+			)
+			plain
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: justify\"><u style=\"background-color: rgb(204, 102, 0)\"><b>Price Information</b></u></div>"
+				width = 300px
+			)
+			Unit_price
+			(
+				type = USD
+				displayname = "Unit price"
+				width = 200px
+			)
+			Taxable
+			(
+    			type = checkbox
+				initial value = false
+				width = 300px
+			)
+			Tax
+			(
+				type = list
+				values = {"TPS", "TVQ"}
+				height = 60px
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "travel-paris-tower"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list Appartements_Report
+		{
+			displayName = "Appartements Report"
+			show all rows from Appartements    
+			(
+				Numero_appartement as "Numero appartement"
+				Product_Cat_gory as "Appartment Catégory"
+				Sous_cat_gotie as "Sous-catégotie"
+				Num_ro_intercom as "Numéro intercom"
+				Type as "Type d'appart"
+				Extension
+				Product_Name as "Appartment Name"
+				Immeubles
+				Choses_incluses as "Choses incluses"
+				status as "status "
+				Date_field as "Date"
+				Unit_price as "Unit price"
+				Taxable
+				Tax
+			)
+			options
+			(
+				icon = "business-laptop-71"
+	 		)
+		}
+		list Available_apartments
+		{
+			displayName = "Available apartments"
+			show all rows from Appartements  [status == "available"]  
+			(
+				Numero_appartement as "Numero appartement"
+				Sous_cat_gotie as "Sous-catégotie"
+				Num_ro_intercom as "Numéro intercom"
+				Extension
+				Immeubles
+				Product_Cat_gory as "Appartment Catégory"
+				Choses_incluses as "Choses incluses"
+				status as "status "
+				Type as "Type d'appart"
+			)
+			options
+			(
+				icon = "travel-hotel-symbol"
+	 		)
+		}
+		calendar Cleaning_Appartments_Tab
+		{
+			displayName = "Cleaning Appartments Tab"
+			show all rows from Appartements  [status == "dirty"]  
+			(
+				Product_Name as "Appartment Name"
+				Numero_appartement as "Numero appartement"
+				Product_Cat_gory as "Appartment Catégory"
+				Sous_cat_gotie as "Sous-catégotie"
+				Num_ro_intercom as "Numéro intercom"
+				Extension
+				Immeubles
+				Choses_incluses as "Choses incluses"
+				status as "status "
+				Date_field as "Date"
+				Type as "Type d'appart"
+				Added_Time as "Added Time"
+			)
+			options
+			(
+				display type = month
+				week start day = sunday
+				display field = status
+				start date = Added_Time
+				icon = "ui-1-calendar-grid-58"
+			)
+		}
+	}
+	section Buildings
+	{
+		icon = "business-building"
+		form Building
+		{
+			success message = "Building Added Successfully"
+			field alignment = left
+			feature property = 32
+			IMMEUBLE
+			(
+    			type = text
+				displayname = "NOM DE L'IMMEUBLE"
+				width = 300px
+			)
+			Adresse
+			(
+    			type = text
+				width = 300px
+			)
+			Code_postal
+			(
+    			type = text
+				displayname = "Code postal"
+				width = 300px
+			)
+			Tphone
+			(
+    			type = phonenumber
+				displayname = "Téléphone"
+				width = 300px
+			)
+			Tcopieur
+			(
+    			type = phonenumber
+				displayname = "Télécopieur"
+				width = 300px
+			)
+			Tphoneprincipal
+			(
+    			type = phonenumber
+				displayname = "Téléphone principal"
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "business-building"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Buildings
+		{
+			displayName = "All Buildings"
+			show all rows from Building    
+			(
+				IMMEUBLE as "NOM DE L'IMMEUBLE"
+				Adresse
+				Code_postal as "Code postal"
+				Tcopieur as "Télécopieur"
+				Tphone as "Téléphone"
+				Tphoneprincipal as "Téléphone principal"
+			)
+			options
+			(
+				icon = "business-building"
+	 		)
+		}
+	}
+	section Bail_Information
+	{
+		displayname= "Bail Information"
+		icon = "travel-info"
+		form Bail_Information
+		{
+			displayname = "Bail Information"
+			success message = "Bail Information Added Successfully"
+			field alignment = left
+			feature property = 32
+			Numero_de_reservation
+			(
+    			type = autonumber
+				displayname = "Numero de reservation"
+				start index = 3
+				width = 300px
+			)
+			Immeuble
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				sortorder = ascending
+				width = 300px
+			)
+			Appartements_Name
+			(
+				type = picklist
+				displayname = " Appartements Name"
+				values  = Appartements.ID
+    			displayformat = [Product_Name]
+				sortorder = ascending
+				width = 300px
+			)
+			Client_Name
+			(
+				type = picklist
+				displayname = "Client Name"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name + " - " + Last_Name]
+				sortorder = ascending
+				width = 300px
+			)
+			Statut
+			(
+				type = picklist
+				values = {"En cours", "Terminé"}
+				width = 300px
+			)
+			Date_de_dbut
+			(
+    			type = date
+				displayname = "Date de début"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 300px
+			)
+			Date_de_fin
+			(
+    			type = date
+				displayname = "Date de fin"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "travel-info"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Bail_Information
+		{
+			displayName = "All Bail Information"
+			show all rows from Bail_Information    
+			(
+				Numero_de_reservation as "Numero de reservation"
+				Immeuble
+				Date_de_dbut as "Date de début"
+				Date_de_fin as "Date de fin"
+				Client_Name as "Client Name"
+				Statut
+				Appartements_Name as " Appartements Name"
+			)
+			options
+			(
+				icon = "travel-info"
+	 		)
+		}
+	}
+	section Locker_Information
+	{
+		displayname= "Locker Information"
+		icon = "business-safe"
+		form Locker_Information
+		{
+			displayname = "Locker Information"
+			success message = "Locker Information Added Successfully"
+			field alignment = left
+			feature property = 32
+			Numero
+			(
+    			type = text
+				displayname = "Numero Locker"
+				width = 300px
+			)
+			Client_loc
+			(
+				type = picklist
+				displayname = "Client"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name]
+				sortorder = ascending
+				width = 300px
+			)
+			Prix
+			(
+				type = USD
+				width = 300px
+			)
+			Immeuble
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				sortorder = ascending
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "business-safe"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Locker_Information
+		{
+			displayName = "All Locker Information"
+			show all rows from Locker_Information    
+			(
+				Numero as "Numero Locker"
+				Prix
+				Immeuble
+				Client_loc as "Client"
+			)
+			options
+			(
+				icon = "travel-info"
+	 		)
+		}
+	}
+	section Bicyclette_Information
+	{
+		displayname= "Bicyclette Information"
+		icon = "travel-info"
+		form Bicyclette_Information
+		{
+			displayname = "Bicyclette Information"
+			success message = "Bicyclette Information Added Successfully"
+			field alignment = left
+			feature property = 32
+			must have Nom_de_Sans_titre
+			(
+    			type = text
+				displayname = "Nom de Sans titre"
+				width = 300px
+			)
+			Client_Account_Information
+			(
+				type = picklist
+				displayname = "Client Account Information"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name]
+				searchable = true
+				sortorder = ascending
+				width = 300px
+			)
+			Montant
+			(
+				type = USD
+				width = 300px
+			)
+			Building
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				searchable = true
+				sortorder = ascending
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "travel-info"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Bicyclette_Information
+		{
+			displayName = "All Bicyclette Information"
+			show all rows from Bicyclette_Information    
+			(
+				Nom_de_Sans_titre as "Nom de Sans titre"
+				Montant
+				Building
+				Client_Account_Information as "Client Account Information"
+			)
+			options
+			(
+				icon = "travel-info"
+	 		)
+		}
+	}
+	section Client_Account_Information
+	{
+		displayname= "Client Account Information"
+		icon = "travel-info"
+		form Client_Account_Information
+		{
+			displayname = "Client Account Information"
+			success message = "Client Account Information Added Successfully"
+			field alignment = left
+			feature property = 32
+			plain
+			(
+    			type = plaintext
+				value = "<br>\n<table cellpadding=\"2\" cellspacing=\"2\" border=\"2\" style=\"width: 100%; font-size: 10pt\">\n <tbody>\n  <tr>\n   <td style=\"text-align: center\"><font color=\"#cc0000\" face=\"times new roman, times, serif\" style=\"\" size=\"4\"><a href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Appartements_Reservation\" title=\"Back To Appartements Reservation\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"\"><b style=\"\">Back To Appartements Reservation</b></a></font></td>\n  </tr>\n </tbody>\n</table>"
+				width = 300px
+			)
+			First_name
+			(
+    			type = text
+				displayname = "First Name"
+				width = 300px
+			)
+			must have Last_Name
+			(
+    			type = text
+				displayname = "Last Name"
+				width = 300px
+			)
+			Email
+			(
+    			type = email
+				width = 300px
+			)
+			Phone_Number
+			(
+    			type = phonenumber
+				displayname = "Phone"
+				width = 300px
+			)
+			Mobile
+			(
+    			type = phonenumber
+				width = 300px
+			)
+			Date_of_Birth
+			(
+    			type = date
+				displayname = "Date of Birth"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 300px
+			)
+			Statut_du_contact
+			(
+				type = picklist
+				displayname = "Statut du contact"
+				values = {"Actif", "Inactif"}
+				width = 300px
+			)
+			Plaque_de_v_hicule
+			(
+    			type = text
+				displayname = "Plaque de véhicule"
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "travel-info"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+		                         			PreSubmit  =  "<?xml version=\"1.0\" encoding=\"UTF-8\"?><preoncommit><openurl/><successmsg><type><![CDATA[sucmsgtimeout]]></type><value><![CDATA[Client Account Information Added Successfully]]></value><timeout><![CDATA[2]]></timeout></successmsg></preoncommit>"
+		                        			on success
+		                        			{
+		                                			data = Map();
+			data.put("First_Name",input.First_name);
+			data.put("Last_Name",input.Last_Name);
+			info data;
+			//data.put("Email",count.get("Email"));
+			//data.put("Phone_Number",count.get("Home_Phone"));
+			//data.put("Mobile",count.get("Mobile"));
+			//data.put("Date_of_Birth",count.get("Date_of_Birth"));
+			//data.put("Plaque_de_v_hicule",count.get("Plaque_de_véhicule"));
+			//createData = zoho.crm.createRecord("francois145","apartments-rental-app","Client_Account_Information",data);
+			//info createData;
+			createData = zoho.crm.create("Contacts",data);
+			info createData;
+
+		                        			}
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Client_Account_Information
+		{
+			displayName = "All Client Account Information"
+			show all rows from Client_Account_Information    
+			(
+				First_name as "First Name"
+				Last_Name as "Last Name"
+				Email
+				Phone_Number as "Phone"
+				Mobile
+				Date_of_Birth as "Date of Birth"
+				Statut_du_contact as "Statut du contact"
+				Plaque_de_v_hicule as "Plaque de véhicule"
+			)
+			options
+			(
+				icon = "travel-info"
+	 		)
+		}
+	}
+	section Room_Cleaning_Services
+	{
+		displayname= "Room Cleaning Services"
+		icon = "travel-church"
+		form Room_cleaning_services
+		{
+			displayname = "Room cleaning services"
+			success message = "Room Cleaning Service Added Successfully"
+			field alignment = left
+			feature property = 32
+			Clean_Appartement
+			(
+				type = picklist
+				displayname = " Clean Appartement"
+				values  = Appartements.ID
+    			displayformat = [Numero_appartement]
+				sortorder = ascending
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "travel-church"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Room_Cleaning_Services
+		{
+			displayName = "All Room Cleaning Services"
+			show all rows from Room_cleaning_services    
+			(
+				Clean_Appartement as " Clean Appartement"
+			)
+			options
+			(
+				icon = "travel-church"
+	 		)
+		}
+	}
+	section Help_Desks
+	{
+		displayname= "Help Desks"
+		icon = "travel-info"
+		form Help_Desk
+		{
+			displayname = "Help Desk"
+			success message = "Help Desk Added Successfully"
+			field alignment = left
+			feature property = 32
+			Client_Name
+			(
+				type = picklist
+				displayname = "Client Name"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name + " - " + Last_Name]
+				sortorder = ascending
+				width = 300px
+			)
+			Phone_Number
+			(
+    			type = phonenumber
+				displayname = "Phone"
+				width = 300px
+			)
+			Subject_field
+			(
+    			type = textarea
+				displayname = "Subject"
+				height = 100px
+				width = 300px
+			)
+			Description
+			(
+    			type = richtext
+				height = 200px
+				toolbar = enable
+				[
+					style, font-color, background-color, alignment, link, table, bullets-and-numbering, 
+					font-size : {1, 2, 3, 4, 5, 6, 7},
+					font-family : {"Serif", "Arial", "Courier New", "Georgia", "Tahoma", "Times New Roman", "Trebuchet", "Verdana", "Comic Sans Ms"}
+				]
+				width = 300px
+			)
+			Email
+			(
+    			type = email
+				width = 300px
+			)
+			Issue
+			(
+				type = picklist
+				values = {"Room clean", "Room leave"}
+				initial value = "Room clean"
+				others option = true
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "furniture-desk-drawer"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Help_Desks
+		{
+			displayName = "All Help Desks"
+			show all rows from Help_Desk    
+			(
+				Client_Name as "Client Name"
+				Email
+				Phone_Number as "Phone"
+				Subject_field as "Subject"
+				Description
+				Issue
+			)
+			options
+			(
+				icon = "shopping-pos"
+	 		)
+		}
+	}
+	section Immeuble_Owner_Information
+	{
+		displayname= "Immeuble Owner Information"
+		icon = "travel-info"
+		form Immeuble_Owner_information
+		{
+			displayname = "Immeuble Owner information"
+			success message = "Immeuble Owner Information Added Successfully"
+			field alignment = left
+			feature property = 32
+			Immeuble_Owner
+			(
+    			type = text
+				displayname = "Immeuble Owner"
+				width = 300px
+			)
+			Email
+			(
+    			type = email
+				width = 300px
+			)
+			Phone_Number
+			(
+    			type = phonenumber
+				displayname = "Phone"
+				width = 300px
+			)
+			Address
+			(
+    			type = address
+     			usemap = true
+     			inlinesearch = false
+     			address_line_1
+     			(
+	     			  type = address_line_1
+	     			  displayname = "Address Line 1"
+     			) 
+     			address_line_2
+     			(
+	     			  type = address_line_2
+	     			  displayname = "Address Line 2"
+     			) 
+     			district_city
+     			(
+	     			  type = district_city
+	     			  displayname = "City / District"
+     			) 
+     			state_province
+     			(
+	     			  type = state_province
+	     			  displayname = "State / Province"
+     			) 
+     			postal_Code
+     			(
+	     			  type = postal_Code
+	     			  displayname = "Postal Code"
+     			) 
+     			country
+     			(
+	     			  type = country
+	     			  displayname = "Country"
+     			) 
+     			latitude
+     			(
+	     			  type = latitude
+	     			  displayname = "latitude"
+	     			 visibility = false
+     			) 
+     			longitude
+     			(
+	     			  type = longitude
+	     			  displayname = "longitude"
+	     			 visibility = false
+     			) 
+				width = 300px
+			)
+	
+			customize
+			(
+				icon = "travel-info"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list All_Immeuble_Owner_Information
+		{
+			displayName = "All Immeuble Owner Information"
+			show all rows from Immeuble_Owner_information    
+			(
+				Email
+				Phone_Number as "Phone"
+				Address 
+	 			(
+	      			displayformat = [address_line_1+""+address_line_2+""+district_city+""+state_province+""+postal_Code+""+country]
+	      			enable = Show_As_Text
+	 			)
+				Immeuble_Owner as "Immeuble Owner"
+			)
+			options
+			(
+				icon = "travel-info"
+	 		)
+		}
+	}
+	section Appartment_Booking
+	{
+		displayname= "Appartment Booking"
+		form Appartment_Booking
+		{
+			displayname = "Appartment Booking"
+			success message = "Data Added Successfully!"
+			field alignment = left
+			plain
+			(
+    			type = plaintext
+				value = "<span style=\"color: rgb(49, 57, 73); font-family: &quot;ProximaNova Regular&quot;, sans-serif; font-size: 18px; font-weight: 600; background-color: rgb(255, 255, 255)\">Client Information</span><span class=\"fieldMandate\" style=\"font-family: &quot;ProximaNova Regular&quot;, sans-serif; color: rgb(255, 0, 0); margin-left: 3px; background-color: rgb(255, 255, 255)\">*</span>"
+				width = 300px
+			)
+			First_Name1
+			(
+				type = picklist
+				displayname = "First  Name"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			last_name12
+			(
+    			type = text
+				displayname = "last name"
+				width = 200px
+			)
+			Last_Name
+			(
+				type = picklist
+				displayname = "Last Name"
+				values  = Client_Account_Information.ID
+    			displayformat = [Last_Name]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Email
+			(
+				type = picklist
+				values  = Client_Account_Information.ID
+    			displayformat = [Email]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Date_of_Birth
+			(
+				type = picklist
+				displayname = "Date of Birth"
+				values  = Client_Account_Information.ID
+    			displayformat = [Date_of_Birth]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Statut_du_contact
+			(
+				type = picklist
+				displayname = "Statut du contact"
+				values = {"Atcif", "InActif"}
+				initial value = "Atcif"
+				width = 200px
+			)
+			Plaque_de_v_hicule
+			(
+				type = picklist
+				displayname = "Plaque de véhicule"
+				values  = Client_Account_Information.ID
+    			displayformat = [Plaque_de_v_hicule]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			plain1
+			(
+    			type = plaintext
+				value = "<span style=\"color: rgb(49, 57, 73); font-family: &quot;ProximaNova Regular&quot;, sans-serif; font-size: 18px; font-weight: 600; background-color: rgb(255, 255, 255)\">Apartments Detail</span><span class=\"fieldMandate\" style=\"font-family: &quot;ProximaNova Regular&quot;, sans-serif; color: rgb(255, 0, 0); margin-left: 3px; background-color: rgb(255, 255, 255)\">*</span>"
+				width = 300px
+			)
+			Building
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Appartment_Name
+			(
+				type = picklist
+				displayname = "Appartment Name"
+				values  = Appartements[Immeubles.ID == input.Building].ID
+    			displayformat = [Product_Name]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Numero_appartement
+			(
+				type = picklist
+				displayname = "Numero appartement"
+				values  = Appartements.ID
+    			displayformat = [Numero_appartement]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Num_ro_intercom
+			(
+				type = picklist
+				displayname = "Numéro intercom"
+				values  = Appartements.ID
+    			displayformat = [Num_ro_intercom]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Type_d_appart
+			(
+				type = picklist
+				displayname = "Type d'appart"
+				values = {"1½", "1½ VIP", "2½", "2½ VIP", "3½ 1 LIT", "3½ 2 LITS", "3½ VIP", "4½", "5½", "6½", "7½", "8½"}
+				initial value = "1½"
+				width = 200px
+			)
+			Extension
+			(
+				type = picklist
+				values  = Appartements.ID
+    			displayformat = [Extension]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Choses_incluses
+			(
+				type = list
+				displayname = "Choses incluses"
+				values = {"Bain", "Balcon", "Chauffage", "Douche", "Eau chaude", "Electricite", "Fumeur", "Laveuse-sécheuse", "Parking", "Porte-patio", "Rénové", "Sous-sol"}
+				height = 60px
+				width = 200px
+			)
+			status
+			(
+				type = picklist
+				displayname = "status  "
+				values = {"available", "departure confirmed", "renovation", "cleaning in progress", "dirty", "standard lease"}
+				width = 200px
+			)
+			Date_field
+			(
+				type = picklist
+				displayname = "Date"
+				values  = Appartements.ID
+    			displayformat = [Date_field]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			plain2
+			(
+    			type = plaintext
+				value = "<u style=\"text-align: justify; background-color: rgb(204, 102, 0)\"><b>Price Information</b></u>"
+				width = 300px
+			)
+			Unit_price
+			(
+				type = picklist
+				displayname = "Unit price"
+				values  = Appartements.ID
+    			displayformat = [Unit_price]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Taxable
+			(
+    			type = checkbox
+				initial value = false
+				width = 300px
+			)
+			Tax
+			(
+				type = list
+				values = {"TPS", "TVQ"}
+				height = 60px
+				width = 200px
+			)
+			Starting_date
+			(
+    			type = datetime
+				displayname = "Starting date"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			Ending_Date
+			(
+    			type = datetime
+				displayname = "Ending Date"
+				initial value = "18-09-18 12:00:00"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			Total_Days
+			(
+				type = number
+				displayname = "Total Days"
+				width = 200px
+			)
+	
+			customize
+			(
+				icon = "ui-1-bold-add"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list Appartment_Booking_Report
+		{
+			displayName = "Appartment Booking Report"
+			show all rows from Appartment_Booking    
+			(
+				First_Name1 as "First  Name"
+				Email
+				Date_of_Birth as "Date of Birth"
+				Statut_du_contact as "Statut du contact"
+				Plaque_de_v_hicule as "Plaque de véhicule"
+				Appartment_Name as "Appartment Name"
+				Numero_appartement as "Numero appartement"
+				Num_ro_intercom as "Numéro intercom"
+				Extension
+				Building
+				Choses_incluses as "Choses incluses"
+				status as "status  "
+				Date_field as "Date"
+				Type_d_appart as "Type d'appart"
+				Unit_price as "Unit price"
+				Tax
+				Taxable
+				Starting_date as "Starting date"
+				Ending_Date as "Ending Date"
+				Total_Days as "Total Days"
+				Last_Name as "Last Name"
+				last_name12 as "last name"
+			)
+			options
+			(
+				icon = "design-bullet-list-67"
+	 		)
+		}
+	}
+	section Appartements_Reservation
+	{
+		displayname= "Appartements Reservation"
+		form Appartements_Reservation
+		{
+			displayname = "Appartements Reservation"
+			success message = "Data Added Successfully!"
+			field alignment = left
+			column
+			{
+			plain
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><font color=\"#994c00\" style=\"background-color: rgb(255, 255, 255)\"><span style=\"font-family: &quot;times new roman&quot;, times, serif; font-size: x-large; font-weight: 600\">Client Information</span><span class=\"fieldMandate\" style=\"font-family: &quot;times new roman&quot;, times, serif; font-size: x-large; margin-left: 3px\">*</span></font></div><hr />"
+				width = 300px
+			)
+			First_Name
+			(
+				type = picklist
+				displayname = "First Name"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+				on user input
+				{
+					data = Client_Account_Information[ID == input.First_Name];
+									input.Last_Name = data.Last_Name;
+									input.Email = data.Email;
+									input.Phone = data.Phone_Number;
+									input.Mobile = data.Mobile;
+									input.Date_of_Birth = data.Date_of_Birth;
+									input.Plaque_de_v_hicule = data.Plaque_de_v_hicule;
+
+				}
+			)
+			Email
+			(
+    			type = email
+				width = 200px
+			)
+			Mobile
+			(
+				type = number
+				width = 200px
+			)
+			Statut_du_contact
+			(
+				type = picklist
+				displayname = "Statut du contact"
+				values = {"Actif", "Inactif"}
+				width = 200px
+			)
+			plain1
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b><font face=\"times new roman, times, serif\" size=\"5\" color=\"#990000\"><span style=\"background-color: rgb(255, 255, 255)\">Apartments Detail</span><span class=\"fieldMandate\" style=\"margin-left: 3px; background-color: rgb(255, 255, 255)\">*</span></font></b></div><hr />"
+				width = 300px
+			)
+			Appartment_Name
+			(
+				type = picklist
+				displayname = "Appartment Name"
+				values  = Appartements.ID
+    			displayformat = [Product_Name]
+				allow new entries = true
+				[
+					displayname = "Add New"
+					alignment = bottom
+				]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+				on user input
+				{
+					data = Appartements[ID == input.Appartment_Name];
+									input.Numero_appartement = data.Numero_appartement;
+									input.Num_ro_intercom = data.Num_ro_intercom;
+									input.Extension = data.Extension;
+
+				}
+			)
+			Appartment_Cat_gory
+			(
+				type = picklist
+				displayname = "Appartment Catégory"
+				values = {"Appartments", "Bicyclette", "Bureau", "Chaises hautes", "Garage", "Lit d'appoint", "Lockers", "Modems", "Parc de bébé"}
+				initial value = "Appartments"
+				width = 200px
+			)
+			Num_ro_intercom
+			(
+    			type = text
+				displayname = "Numéro intercom"
+				width = 200px
+			)
+			Immeubles
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				allow new entries = true
+				[
+					displayname = "Add New"
+					alignment = bottom
+				]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			status
+			(
+				type = picklist
+				displayname = "status "
+				values = {"available", "departure confirmed", "renovation", "cleaning in progress", "dirty", "standard lease"}
+				initial value = "available"
+				width = 200px
+			)
+			Type
+			(
+				type = picklist
+				displayname = "Type d'appart"
+				values = {"1½", "1½ VIP", "2½", "2½ VIP", "3½ 1 LIT", "3½ 2 LITS", "3½ VIP", "4½", "5½", "6½", "7½", "8½"}
+				initial value = "1½"
+				width = 200px
+			)
+			plain5
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b style=\"text-align: justify; background-color: rgb(255, 255, 255)\"><font color=\"#990000\" face=\"times new roman, times, serif\" size=\"5\">Price Information</font></b></div>"
+				width = 300px
+			)
+			Unit_price
+			(
+				type = USD
+				displayname = "Unit price"
+				width = 200px
+			)
+			Tax
+			(
+				type = list
+				values = {"TPS", "TVQ"}
+				height = 60px
+				width = 200px
+			)
+			plain9
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b><font color=\"#990000\" face=\"times new roman, times, serif\" size=\"5\">Reservation Starting Time</font></b></div>"
+				width = 300px
+			)
+			Start_Date_Time
+			(
+    			type = datetime
+				displayname = "Starting Date Time"
+				initial value = "18-09-03 12:00:00"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+				on user input
+				{
+					start = input.Start_Date_Time.getDay();
+									end = input.Ending_Date_Time.getDay();
+									input.Total_days = end - start;
+
+				}
+			)
+			Total_days
+			(
+				type = number
+				displayname = "Total days "
+				width = 200px
+			)
+			}
+	
+			column
+			{
+			plain2
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"> \n <b><font face=\"times new roman, times, serif\" size=\"5\">&nbsp;<a href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Client_Account_Information\" title=\"If you have not account please create a new account\" target=\"_blank\" rel=\"noopener noreferrer\">Create New Account</a>&nbsp;</font></b> \n</div> \n<hr>"
+				width = 300px
+			)
+			Last_Name
+			(
+    			type = text
+				displayname = "Last Name"
+				width = 200px
+			)
+			Phone
+			(
+				type = number
+				width = 200px
+			)
+			Date_of_Birth
+			(
+    			type = date
+				displayname = "Date of Birth"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			Plaque_de_v_hicule
+			(
+    			type = text
+				displayname = "Plaque de véhicule"
+				width = 200px
+			)
+			plain4
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\">\n <b><font face=\"times new roman, times, serif\" size=\"5\"><a href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Appartements\" title=\"if you have not appartment please add new appartment\" target=\"_blank\" rel=\"noopener noreferrer\">Add&nbsp;New&nbsp;Appartment</a></font></b>\n</div> \n<hr>"
+				width = 300px
+			)
+			Numero_appartement
+			(
+    			type = text
+				displayname = "Numero appartement"
+				width = 200px
+			)
+			Sous_cat_gotie
+			(
+				type = picklist
+				displayname = "Sous-catégotie"
+				values = {"Autre", "Double", "Meublé", "Non meublé", "Semi-meublé", "Simple", "Simple etroit", "Simple moto"}
+				initial value = "Autre"
+				width = 200px
+			)
+			Extension
+			(
+				type = number
+				width = 200px
+			)
+			Choses_incluses
+			(
+				type = list
+				displayname = "Choses incluses"
+				values = {"Bain", "Balcon", "Chauffage", "Douche", "Eau chaude", "Electricite", "Fumeur", "Laveuse-sécheuse", "Parking", "Porte-patio", "Rénové", "Sous-sol"}
+				height = 60px
+				width = 200px
+			)
+			Date_field
+			(
+    			type = date
+				displayname = "Date"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			plain7
+			(
+    			type = plaintext
+				value = "."
+				width = 300px
+			)
+			plain8
+			(
+    			type = plaintext
+				value = "."
+				width = 300px
+			)
+			plain6
+			(
+    			type = plaintext
+				value = "."
+				width = 300px
+			)
+			Taxable
+			(
+    			type = checkbox
+				initial value = false
+				width = 300px
+			)
+			plain11
+			(
+    			type = plaintext
+				value = ""
+				width = 300px
+			)
+			plain12
+			(
+    			type = plaintext
+				value = "."
+				width = 300px
+			)
+			plain13
+			(
+    			type = plaintext
+				value = ""
+				width = 300px
+			)
+			plain10
+			(
+    			type = plaintext
+				value = ""
+				width = 300px
+			)
+			Ending_Date_Time
+			(
+    			type = datetime
+				displayname = "Ending Date Time"
+				initial value = "18-09-11 12:00:00"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+				on user input
+				{
+					start = input.Start_Date_Time.getDay();
+									end = input.Ending_Date_Time.getDay();
+									input.Total_days = end - start;
+
+				}
+			)
+			}
+			customize
+			(
+				icon = "ui-1-bold-add"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+		                         			PreSubmit  =  "<?xml version=\"1.0\" encoding=\"UTF-8\"?><preoncommit><openurl/><successmsg/></preoncommit>"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list Appartements_Reservation_Report
+		{
+			displayName = "Appartements Reservation Report"
+			show all rows from Appartements_Reservation    
+			(
+				First_Name as "First Name"
+				Email
+				Phone
+				Mobile
+				Date_of_Birth as "Date of Birth"
+				Statut_du_contact as "Statut du contact"
+				Plaque_de_v_hicule as "Plaque de véhicule"
+				Last_Name as "Last Name"
+				Appartment_Name as "Appartment Name"
+				Appartment_Cat_gory as "Appartment Catégory"
+				Sous_cat_gotie as "Sous-catégotie"
+				Num_ro_intercom as "Numéro intercom"
+				Extension
+				Immeubles
+				Choses_incluses as "Choses incluses"
+				status as "status "
+				Date_field as "Date"
+				Type as "Type d'appart"
+				Unit_price as "Unit price"
+				Taxable
+				Tax
+				Numero_appartement as "Numero appartement"
+				Start_Date_Time as "Starting Date Time"
+				Ending_Date_Time as "Ending Date Time"
+				Total_days as "Total days "
+			)
+			options
+			(
+				icon = "design-bullet-list-67"
+	 		)
+		}
+	}
+	section Appartements_Reservation_in_Group
+	{
+		displayname= "Appartements Reservation in Group"
+		form Appartements_Reservation_in_Group
+		{
+			displayname = "Appartements Reservation in Group"
+			success message = "Data Added Successfully!"
+			field alignment = left
+			column
+			{
+			plain8
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b style=\"text-align: justify; background-color: rgb(255, 255, 255)\"><font size=\"5\" face=\"times new roman, times, serif\" color=\"#990000\">Company  Information</font></b></div>"
+				width = 300px
+			)
+			Account_Number
+			(
+				type = picklist
+				displayname = "Account Number"
+				values  = Company_Accounts.ID
+    			displayformat = [Account_Number]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Company_Account_Name
+			(
+    			type = text
+				displayname = "Company Account Name"
+				width = 200px
+			)
+			Employees
+			(
+				type = number
+				width = 200px
+			)
+			plain
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><font style=\"background-color: rgb(255, 255, 255)\" color=\"#994c00\"><span style=\"font-family: &quot;times new roman&quot;, times, serif; font-size: x-large; font-weight: 600\">Client Information</span><span style=\"font-family: &quot;times new roman&quot;, times, serif; font-size: x-large; margin-left: 3px\" class=\"fieldMandate\">*</span></font></div><hr />"
+				width = 300px
+			)
+			Client_Name
+			(
+				type = picklist
+				displayname = "Client Name"
+				values  = Client_Account_Information.ID
+    			displayformat = [First_name + " - " + Last_Name]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Mobile
+			(
+				type = number
+				width = 200px
+			)
+			Statut_du_contact
+			(
+				type = picklist
+				displayname = "Statut du contact"
+				values = {"Actif", "Inactif"}
+				initial value = "Actif"
+				width = 200px
+			)
+			Plaque_de_v_hicule
+			(
+    			type = text
+				displayname = "Plaque de véhicule"
+				width = 200px
+			)
+			plain6
+			(
+    			type = plaintext
+				value = "<br />"
+				width = 300px
+			)
+			plain2
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b><font color=\"#990000\" size=\"5\" face=\"times new roman, times, serif\"><span style=\"background-color: rgb(255, 255, 255)\">Apartments Detail</span><span style=\"margin-left: 3px; background-color: rgb(255, 255, 255)\" class=\"fieldMandate\">*</span></font></b></div><hr />"
+				width = 300px
+			)
+			Appartment_Name
+			(
+				type = picklist
+				displayname = "Appartment Name"
+				values  = Appartements.ID
+    			displayformat = [Product_Name]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			Appartment_Cat_gory
+			(
+				type = picklist
+				displayname = "Appartment Catégory"
+				values = {"Appartments", "Bicyclette", "Bureau", "Chaises hautes", "Garage", "Lit d'appoint", "Lockers", "Modems", "Parc de bébé"}
+				width = 200px
+			)
+			Num_ro_intercom
+			(
+    			type = text
+				displayname = "Numéro intercom"
+				width = 200px
+			)
+			Immeubles
+			(
+				type = picklist
+				values  = Building.ID
+    			displayformat = [IMMEUBLE]
+				searchable = true
+				sortorder = ascending
+				width = 200px
+			)
+			status
+			(
+				type = picklist
+				displayname = "status "
+				values = {"available", "departure confirmed", "renovation", "cleaning in progress", "dirty", "standard lease"}
+				initial value = "available"
+				width = 200px
+			)
+			Date_field
+			(
+    			type = date
+				displayname = "Date"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			plain10
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b style=\"text-align: justify; background-color: rgb(255, 255, 255)\"><font size=\"5\" face=\"times new roman, times, serif\" color=\"#990000\">Price Information</font></b></div>"
+				width = 300px
+			)
+			Unit_price
+			(
+				type = USD
+				displayname = "Unit price"
+				width = 200px
+			)
+			Tax
+			(
+				type = list
+				values = {"TPS", "TVQ"}
+				height = 60px
+				width = 200px
+			)
+			Taxable
+			(
+    			type = checkbox
+				initial value = false
+				width = 300px
+			)
+			Total_price
+			(
+				type = number
+				displayname = "Total price"
+				width = 200px
+			)
+			plain11
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"><b><font size=\"5\" face=\"times new roman, times, serif\" color=\"#990000\">Reservation Starting Time</font></b></div>"
+				width = 300px
+			)
+			Starting_Date_Time
+			(
+    			type = datetime
+				displayname = "Starting Date Time"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			Ending_Date_Time
+			(
+    			type = datetime
+				displayname = "Ending Date Time"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			Total_days
+			(
+				type = number
+				displayname = "Total days "
+				width = 200px
+			)
+			}
+	
+			column
+			{
+			plain9
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"> \n <b><font face=\"times new roman, times, serif\" size=\"5\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Company_Accounts\">Create New Account</a>&nbsp;</font></b>\n</div> \n<hr>"
+				width = 300px
+			)
+			Parent_Company_Account
+			(
+    			type = text
+				displayname = "Parent Company Account"
+				width = 200px
+			)
+			Company_Phone
+			(
+				type = number
+				displayname = "Company Phone"
+				width = 200px
+			)
+			plain1
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"> \n <b><font size=\"5\" face=\"times new roman, times, serif\">&nbsp;<a rel=\"noopener noreferrer\" target=\"_blank\" title=\"If you have not account please create a new account\" href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Client_Account_Information\">Create New Account</a>&nbsp;</font></b> \n</div> \n<hr>"
+				width = 300px
+			)
+			Email
+			(
+    			type = email
+				width = 200px
+			)
+			Phone
+			(
+				type = number
+				width = 200px
+			)
+			Date_of_Birth
+			(
+    			type = date
+				displayname = "Date of Birth"
+				alloweddays = 0,1,2,3,4,5,6
+				width = 200px
+			)
+			plain4
+			(
+    			type = plaintext
+				value = "<font color=\"#ffffff\">.</font>"
+				width = 300px
+			)
+			plain5
+			(
+    			type = plaintext
+				value = "<font color=\"#ffffff\">h</font>"
+				width = 300px
+			)
+			plain7
+			(
+    			type = plaintext
+				value = ""
+				width = 300px
+			)
+			plain3
+			(
+    			type = plaintext
+				value = "<div style=\"text-align: center\"> \n <b><font size=\"5\" face=\"times new roman, times, serif\"><a rel=\"noopener noreferrer\" target=\"_blank\" title=\"if you have not appartment please add new appartment\" href=\"https://app.zohocreator.com/francois145/apartments-rental-app/#Form:Appartements\">Add&nbsp;New&nbsp;Appartment</a></font></b> \n</div> \n<hr>"
+				width = 300px
+			)
+			Numero_appartement
+			(
+    			type = text
+				displayname = "Numero appartement"
+				width = 200px
+			)
+			Sous_cat_gotie
+			(
+				type = picklist
+				displayname = "Sous-catégotie"
+				values = {"Autre", "Double", "Meublé", "Non meublé", "Semi-meublé", "Simple", "Simple etroit", "Simple moto"}
+				initial value = "Autre"
+				width = 200px
+			)
+			Extension
+			(
+				type = number
+				width = 200px
+			)
+			Choses_incluses
+			(
+				type = list
+				displayname = "Choses incluses"
+				values = {"Bain", "Balcon", "Chauffage", "Douche", "Eau chaude", "Electricite", "Fumeur", "Laveuse-sécheuse", "Parking", "Porte-patio", "Rénové", "Sous-sol"}
+				height = 60px
+				width = 200px
+			)
+			Type_d_appart
+			(
+				type = picklist
+				displayname = "Type d'appart"
+				values = {"1½", "1½ VIP", "2½", "2½ VIP", "3½ 1 LIT", "3½ 2 LITS", "3½ VIP", "4½", "5½", "6½", "7½", "8½"}
+				initial value = "1½"
+				width = 200px
+			)
+			}
+			customize
+			(
+				icon = "ui-1-bold-add"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list Appartements_Reservation_in_Group_Report
+		{
+			displayName = "Appartements Reservation in Group Report"
+			show all rows from Appartements_Reservation_in_Group    
+			(
+				Client_Name as "Client Name"
+				Email
+				Mobile
+				Phone
+				Statut_du_contact as "Statut du contact"
+				Date_of_Birth as "Date of Birth"
+				Plaque_de_v_hicule as "Plaque de véhicule"
+				Appartment_Name as "Appartment Name"
+				Numero_appartement as "Numero appartement"
+				Appartment_Cat_gory as "Appartment Catégory"
+				Sous_cat_gotie as "Sous-catégotie"
+				Num_ro_intercom as "Numéro intercom"
+				Extension
+				Immeubles
+				Choses_incluses as "Choses incluses"
+				status as "status "
+				Type_d_appart as "Type d'appart"
+				Date_field as "Date"
+				Account_Number as "Account Number"
+				Parent_Company_Account as "Parent Company Account"
+				Company_Account_Name as "Company Account Name"
+				Company_Phone as "Company Phone"
+				Employees
+				Unit_price as "Unit price"
+				Tax
+				Taxable
+				Starting_Date_Time as "Starting Date Time"
+				Ending_Date_Time as "Ending Date Time"
+				Total_days as "Total days "
+				Total_price as "Total price"
+			)
+			group by
+			(
+				properties
+    			(
+  	    			display record count = true
+   				)
+				Account_Number ascending
+				Parent_Company_Account ascending
+				Company_Account_Name ascending
+				Company_Phone ascending
+				Employees ascending
+			)
+			options
+			(
+				icon = "design-bullet-list-67"
+	 		)
+		}
+	}
+	section Company_Accounts
+	{
+		displayname= "Company Accounts"
+		form Company_Accounts
+		{
+			displayname = "Company Accounts"
+			success message = "Data Added Successfully!"
+			field alignment = left
+			Account_Number
+			(
+				type = number
+				displayname = "Account Number"
+				width = 200px
+			)
+			Parent_Account
+			(
+    			type = text
+				displayname = "Parent Company Account"
+				width = 200px
+			)
+			Accounts
+			(
+    			type = text
+				displayname = "Company Account Name"
+				width = 200px
+			)
+			Company_Phone
+			(
+				type = number
+				displayname = "Company Phone"
+				width = 200px
+			)
+			Employees
+			(
+				type = number
+				width = 200px
+			)
+			Langue
+			(
+				type = picklist
+				values = {"Français", "English"}
+				initial value = "Français"
+				width = 200px
+			)
+	
+			customize
+			(
+				icon = "ui-1-bold-add"
+			)
+			actions
+			{
+				on add
+				{
+					submit
+					(
+   						type = submit
+   						displayname = "Submit"
+					)
+					reset
+					(
+   						type = reset
+   						displayname = "Reset"
+					)
+				}
+				on edit
+				{
+					update
+					(
+   						type = submit
+   						displayname = "Update"
+					)
+					cancel
+					(
+   						type = cancel
+   						displayname = "Cancel"
+					)
+				}
+			}
+		}
+		list Company_Accounts_Report
+		{
+			displayName = "Company Accounts Report"
+			show all rows from Company_Accounts    
+			(
+				Accounts as "Company Account Name"
+				Parent_Account as "Parent Company Account"
+				Company_Phone as "Company Phone"
+				Account_Number as "Account Number"
+				Employees
+				Langue
+			)
+			options
+			(
+				icon = "design-bullet-list-67"
+	 		)
+		}
+	}
+	functions
+	{
+ 			void defaultFunction()
+			{
+				info "good";
+			}
+	}
+	share_settings
+	{
+			"Read"
+			{
+				name = "Read"
+				type = Users_Permissions
+				permissions = {Chat:true, Predefined:true}
+				description = "This profile will have read permission for all components\n"
+			}
+			"Write"
+			{
+				name = "Write"
+				type = Users_Permissions
+				permissions = {Chat:true, Predefined:true}
+				description = "This profile will have write permission for all components\n"
+			}
+			"Administrator"
+			{
+				name = "Administrator"
+				type = Users_Permissions
+				permissions = {Chat:true, Predefined:true}
+				description = "This profile will have all the permissions.\n"
+			}
+			roles
+			{
+				"CEO"
+				{
+					description = "User belonging to this role can access data of all other users.\n\n\n\n"
+				}
+			}
+	}
+	customize
+	{
+		
+		layout = "tab"
+		color = "black"
+		base theme = "professional"
+		new theme = 6
+		new theme color = 1
+		icons =true
+    	icon type = 3
+    	icon name = "ARA"
+    	icon theme = "yellow"
+		icons style = outline
+	}
+
+
+	
+
+
+}
+
